@@ -1,0 +1,37 @@
+[
+ {
+  "slug": "pin-christmas-mom",
+  "file": "christmas-gifts-for-mom-2026.tsx",
+  "path": "/gift-guides/christmas-gifts-for-mom-2026",
+  "h1": "22 Christmas<br>Gifts for Mom",
+  "sub": "That she&rsquo;ll actually use.",
+  "size": 122,
+  "avoid": [
+   "b'day",
+   "birthday"
+  ]
+ },
+ {
+  "slug": "pin-white-elephant",
+  "file": "white-elephant-2026.tsx",
+  "path": "/gift-guides/white-elephant-gift-ideas-2026",
+  "h1": "21 White<br>Elephant Gifts",
+  "sub": "People actually steal.",
+  "size": 118
+ },
+ {
+  "slug": "pin-new-baby",
+  "file": "new-baby-gifts-2026.tsx",
+  "path": "/gift-guides/new-baby-gifts-2026",
+  "h1": "30 New Baby Gifts",
+  "sub": "The parents will actually use.",
+  "size": 106,
+  "avoid": [
+   "gift card",
+   "doordash"
+  ],
+  "prefer": [
+   "Kaizen Baby"
+  ]
+ }
+]
