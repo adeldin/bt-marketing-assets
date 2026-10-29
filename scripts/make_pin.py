@@ -16,12 +16,12 @@ def guide_images(filename, want=4):
     """All (name, url) pairs in guide order. Splits the file on `slug:`
     boundaries so a long description can't push `image:` out of range."""
     s = io.open(f"{GD}/{filename}", encoding="utf-8").read()
-    lines = s.split("\n")
-    bounds = [i for i, l in enumerate(lines) if l.strip().startswith("slug:")]
-    bounds.append(len(lines))
+    # Split on character offsets, not line prefixes: some guides put the id and
+    # slug on one line (`id: 1, slug: "x",`), which a startswith() test misses.
+    starts = [m.start() for m in re.finditer(r'\bslug:\s*"', s)] + [len(s)]
     out = []
-    for a, b in zip(bounds, bounds[1:]):
-        block = "\n".join(lines[a:b])
+    for a, b in zip(starts, starts[1:]):
+        block = s[a:b]
         nm = re.search(r'\bname:\s*"([^"]+)"', block)
         im = re.search(r'\bimage:\s*"([^"]+)"', block)
         if nm and im:

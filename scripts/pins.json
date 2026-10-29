@@ -1,37 +1,47 @@
 [
- {
-  "slug": "pin-christmas-mom",
-  "file": "christmas-gifts-for-mom-2026.tsx",
-  "path": "/gift-guides/christmas-gifts-for-mom-2026",
-  "h1": "22 Christmas<br>Gifts for Mom",
-  "sub": "That she&rsquo;ll actually use.",
-  "size": 122,
-  "avoid": [
-   "b'day",
-   "birthday"
-  ]
- },
- {
-  "slug": "pin-white-elephant",
-  "file": "white-elephant-2026.tsx",
-  "path": "/gift-guides/white-elephant-gift-ideas-2026",
-  "h1": "21 White<br>Elephant Gifts",
-  "sub": "People actually steal.",
-  "size": 118
- },
- {
-  "slug": "pin-new-baby",
-  "file": "new-baby-gifts-2026.tsx",
-  "path": "/gift-guides/new-baby-gifts-2026",
-  "h1": "30 New Baby Gifts",
-  "sub": "The parents will actually use.",
-  "size": 106,
-  "avoid": [
-   "gift card",
-   "doordash"
-  ],
-  "prefer": [
-   "Kaizen Baby"
-  ]
- }
+ {"slug":"pin-christmas-mom","file":"christmas-gifts-for-mom-2026.tsx","path":"/gift-guides/christmas-gifts-for-mom-2026",
+  "h1":"22 Christmas<br>Gifts for Mom","sub":"That she&rsquo;ll actually use.","size":122,"avoid":["b'day","birthday"]},
+
+ {"slug":"pin-white-elephant","file":"white-elephant-2026.tsx","path":"/gift-guides/white-elephant-gift-ideas-2026",
+  "h1":"21 White<br>Elephant Gifts","sub":"People actually steal.","size":118},
+
+ {"slug":"pin-new-baby","file":"new-baby-gifts-2026.tsx","path":"/gift-guides/new-baby-gifts-2026",
+  "h1":"30 New Baby Gifts","sub":"The parents will actually use.","size":106,
+  "avoid":["gift card","doordash"],"prefer":["Kaizen Baby"]},
+
+ {"slug":"pin-anniversary-her","file":"anniversary-gifts-for-her.tsx","path":"/gift-guides/anniversary-gifts-for-her",
+  "h1":"21 Anniversary<br>Gifts for Her","sub":"Romantic ideas, by budget.","size":112},
+
+ {"slug":"pin-wedding","file":"wedding-gifts-2026.tsx","path":"/gift-guides/wedding-gifts-2026",
+  "h1":"24 Wedding Gifts","sub":"For the couple who registered<br>for everything.","size":112},
+
+ {"slug":"pin-housewarming","file":"new-homeowner-gifts-2026.tsx","path":"/gift-guides/new-homeowner-gifts-2026",
+  "h1":"21 Housewarming<br>Gifts","sub":"That go beyond a candle.","size":104},
+
+ {"slug":"pin-personalized","file":"personalized-memory-gifts.tsx","path":"/personalized-memory-gift-ideas",
+  "h1":"21 Personalized<br>Gifts","sub":"Custom ideas they&rsquo;ll keep forever.","size":112},
+
+ {"slug":"pin-memory-keeper","file":"memory-keeper-gifts.tsx","path":"/memory-keeper-gifts",
+  "h1":"13 Memory<br>Keeper Gifts","sub":"Keepsakes that hold a story.","size":118},
+
+ {"slug":"pin-grandma-sentimental","file":"sentimental-birthday-gifts-grandma.tsx","path":"/sentimental-birthday-gifts-for-grandma",
+  "h1":"18 Sentimental<br>Gifts for Grandma","sub":"Birthday ideas that mean something.","size":104},
+
+ {"slug":"pin-grandparents-day","file":"grandparents-day-2026.tsx","path":"/gift-guides/grandparents-day-gifts-2026",
+  "h1":"30 Grandparents<br>Day Gifts","sub":"Thoughtful ideas they&rsquo;ll actually use.","size":104},
+
+ {"slug":"pin-mother-in-law","file":"mother-in-law-gifts-2026.tsx","path":"/gift-guides/mother-in-law-gifts-2026",
+  "h1":"20 Mother-in-Law<br>Gifts","sub":"That actually land.","size":100},
+
+ {"slug":"pin-teacher","file":"teacher-appreciation-2026.tsx","path":"/gift-guides/teacher-appreciation-gifts-2026",
+  "h1":"19 Teacher<br>Gifts","sub":"That they&rsquo;ll actually use.","size":122},
+
+ {"slug":"pin-graduation","file":"graduation-2026.tsx","path":"/gift-guides/graduation-gifts-2026",
+  "h1":"50 Graduation<br>Gifts","sub":"Thoughtful ideas they&rsquo;ll actually use.","size":118},
+
+ {"slug":"pin-off-to-college","file":"off-to-college-2026.tsx","path":"/gift-guides/off-to-college-gifts-2026",
+  "h1":"24 Off to<br>College Gifts","sub":"For the first dorm room.","size":118},
+
+ {"slug":"pin-fathers-day","file":"fathers-day-2026.tsx","path":"/gift-guides/fathers-day-gifts-2026",
+  "h1":"50 Father&rsquo;s<br>Day Gifts","sub":"Best ideas he&rsquo;ll actually use.","size":118}
 ]
