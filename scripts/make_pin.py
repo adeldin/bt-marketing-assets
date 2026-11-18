@@ -28,7 +28,7 @@ def guide_images(filename, want=4):
             out.append((nm.group(1), im.group(1)))
     return out
 
-def pick_four(filename, avoid=(), prefer=()):
+def pick_four(filename, avoid=(), prefer=(), skip=0):
     """First 4 products that download cleanly, are visually distinct by brand,
     and don't hit an avoid-keyword (e.g. 'b'day' on a Christmas pin).
     Anything matching `prefer` is pulled to the front (used to keep Kaizen
@@ -50,6 +50,10 @@ def pick_four(filename, avoid=(), prefer=()):
         if not local:
             continue
         brands.add(brand)
+        if skip > 0:
+            # A fresh version of a pin: pass over the products the earlier pin already showed.
+            skip -= 1
+            continue
         chosen.append((nm, local))
         if len(chosen) == 4:
             break
@@ -67,7 +71,7 @@ def fetch(url):
     return dest if os.path.exists(dest) and os.path.getsize(dest) > 2000 else None
 
 def build(pin):
-    cells = pick_four(pin["file"], avoid=pin.get("avoid", []), prefer=pin.get("prefer", []))
+    cells = pick_four(pin["file"], avoid=pin.get("avoid", []), prefer=pin.get("prefer", []), skip=pin.get("skip", 0))
     if len(cells) < 4:
         print(f"  !! {pin['slug']}: only {len(cells)}/4 usable images", file=sys.stderr)
     while len(cells) < 4: cells.append(("", None))
